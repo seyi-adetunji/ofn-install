@@ -9,7 +9,7 @@
 - name: python check
   hosts: ofn_servers
   gather_facts: no
-  remote_user: root
+  remote_user: ofn-admin
   tasks:
     - name: Install python
       become: yes
@@ -24,7 +24,7 @@
 # Add the default user and ssh keys as root
 - name: set up default_user
   hosts: ofn_servers
-  remote_user: root
+  remote_user: ofn-admin
   roles:
     - role: default_user
       become: yes
