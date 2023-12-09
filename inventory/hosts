@@ -269,3 +269,12 @@ app.openfoodswitzerland.ch ansible_host=195.15.219.220
 
 [ch:children]
 ch_prod
+
+#------------------------------------------------------------------------------
+# Nigeria
+
+[ng_prod]
+foodconnect.ng ansible_host=170.64.182.182
+
+[ng:children]
+ng_prod
